@@ -42,6 +42,58 @@ You can add, edit, and analyze your purchases with an Excel-like interface and v
 
 ---
 
+## Project Flow Chart
+
+```
++---------------------------+
+|      Start Web App        |
++------------+--------------+
+             |
+             v
++---------------------------+
+|   Enter Purchase Details  |
+| (Editable Table)          |
++------------+--------------+
+             |
+             v
++---------------------------+
+|   Add Purchases Button    |
++------------+--------------+
+             |
+             v
++---------------------------+
+|  Save Purchases to DB     |
+|  & Remove from Entry      |
++------------+--------------+
+             |
+             v
++---------------------------+
+|    Show Expenses Table    |
+| (Editable, Save Changes)  |
++------------+--------------+
+             |
+             v
++---------------------------+
+|   Save Changes Button     |
++------------+--------------+
+             |
+             v
++---------------------------+
+|  Update Expenses in DB    |
++------------+--------------+
+             |
+             v
++---------------------------+
+|   Purchase Analysis       |
+| (Graphs & Charts)         |
++------------+--------------+
+             |
+             v
++---------------------------+
+|           End             |
++---------------------------+
+```
+
 ## File Structure
 
 ```
