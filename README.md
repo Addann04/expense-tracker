@@ -43,7 +43,6 @@ You can add, edit, and analyze your purchases with an Excel-like interface and v
 ## Project Flow Chart
 
 ```mermaid
-flowchart TD
     A([Start Web App])
     B([Enter Purchase Details<br/>(Editable Table)])
     C([Add Purchases Button])
@@ -63,7 +62,6 @@ flowchart TD
     G --> H
     H -->
 ## File Structure
-
 ```
 expense-tracker/
 ├── src/
