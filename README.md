@@ -45,13 +45,13 @@ You can add, edit, and analyze your purchases with an Excel-like interface and v
 ```mermaid
 flowchart TD
     A([Start Web App])
-    B([Enter Purchase Details<br/>(Editable Table)])
+    B([Enter Purchase Details \n Editable Table])
     C([Add Purchases Button])
-    D([Save Purchases to DB<br/>and Remove from Entry])
-    E([Show Expenses Table<br/>(Editable, Save Changes)])
+    D([Save Purchases to DB \n and Remove from Entry])
+    E([Show Expenses Table \n Editable, Save Changes])
     F([Save Changes Button])
     G([Update Expenses in DB])
-    H([Purchase Analysis<br/>(Graphs & Charts)])
+    H([Purchase Analysis\nGraphs & Charts])
     I([End])
 
     A --> B
