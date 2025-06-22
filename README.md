@@ -40,60 +40,28 @@ You can add, edit, and analyze your purchases with an Excel-like interface and v
     streamlit run src/app.py
     ```
 
----
-
 ## Project Flow Chart
 
-```
-+---------------------------+
-|      Start Web App        |
-+------------+--------------+
-             |
-             v
-+---------------------------+
-|   Enter Purchase Details  |
-| (Editable Table)          |
-+------------+--------------+
-             |
-             v
-+---------------------------+
-|   Add Purchases Button    |
-+------------+--------------+
-             |
-             v
-+---------------------------+
-|  Save Purchases to DB     |
-|  & Remove from Entry      |
-+------------+--------------+
-             |
-             v
-+---------------------------+
-|    Show Expenses Table    |
-| (Editable, Save Changes)  |
-+------------+--------------+
-             |
-             v
-+---------------------------+
-|   Save Changes Button     |
-+------------+--------------+
-             |
-             v
-+---------------------------+
-|  Update Expenses in DB    |
-+------------+--------------+
-             |
-             v
-+---------------------------+
-|   Purchase Analysis       |
-| (Graphs & Charts)         |
-+------------+--------------+
-             |
-             v
-+---------------------------+
-|           End             |
-+---------------------------+
-```
+```mermaid
+flowchart TD
+    A([Start Web App])
+    B([Enter Purchase Details<br/>(Editable Table)])
+    C([Add Purchases Button])
+    D([Save Purchases to DB<br/>and Remove from Entry])
+    E([Show Expenses Table<br/>(Editable, Save Changes)])
+    F([Save Changes Button])
+    G([Update Expenses in DB])
+    H([Purchase Analysis<br/>(Graphs & Charts)])
+    I([End])
 
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H -->
 ## File Structure
 
 ```
