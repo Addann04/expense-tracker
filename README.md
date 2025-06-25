@@ -39,22 +39,6 @@ You can add, edit, and analyze your purchases with an Excel-like interface and v
     ```
     streamlit run src/app.py
     ```
-
-## Project Flow Chart
-
-```mermaid
-graph TD
-    A[📸 Capture Image] --> B[📤 Upload Image]
-    B --> C[🛠️ Image Processing]
-    C --> D[🧪 Testing Image]
-    D --> E[🧠 Convolutional Neural Network]
-    E --> F[📚 Training Image]
-    F --> G[🌿 Leaf Disease Detection]
-
-    style A fill:#d2f8d2,stroke:#228B22,stroke-width:2px
-    style G fill:#fddede,stroke:#B22222,stroke-width:2px
-
-```
 expense-tracker/
 ├── src/
 │   ├── app.py
