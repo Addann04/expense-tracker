@@ -43,25 +43,17 @@ You can add, edit, and analyze your purchases with an Excel-like interface and v
 ## Project Flow Chart
 
 ```mermaid
-flowchart TD
-    A([Start Web App])
-    B([Enter Purchase Details \n Editable Table])
-    C([Add Purchases Button])
-    D([Save Purchases to DB \n and Remove from Entry])
-    E([Show Expenses Table \n Editable, Save Changes])
-    F([Save Changes Button])
-    G([Update Expenses in DB])
-    H([Purchase Analysis\nGraphs & Charts])
-    I([End])
+graph TD
+    A[📸 Capture Image] --> B[📤 Upload Image]
+    B --> C[🛠️ Image Processing]
+    C --> D[🧪 Testing Image]
+    D --> E[🧠 Convolutional Neural Network]
+    E --> F[📚 Training Image]
+    F --> G[🌿 Leaf Disease Detection]
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
+    style A fill:#d2f8d2,stroke:#228B22,stroke-width:2px
+    style G fill:#fddede,stroke:#B22222,stroke-width:2px
+
 ```
 expense-tracker/
 ├── src/
