@@ -39,16 +39,14 @@ You can add, edit, and analyze your purchases with an Excel-like interface and v
     ```
     streamlit run src/app.py
     ```
-expense-tracker/
-├── src/
-│   ├── app.py
-│   ├── db.py
-│   └── ...
-├── requirements.txt
-└── README.md
-```
-
----
+    expense-tracker/
+    ├── src/
+    │   ├── app.py
+    │   ├── db.py
+    │   └── ...
+    ├── requirements.txt
+    └── README.md
+    ```
 
 # UML Diagrams
 ### Class Diagram
@@ -83,7 +81,6 @@ classDiagram
     db <.. app : uses
     utils <.. app : uses
 ```
-
 ### Object Diagram
 ```mermaid
 erDiagram
