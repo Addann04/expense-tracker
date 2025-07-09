@@ -92,22 +92,23 @@ erDiagram
         float price
         date date_of_purchase
     }
+
     APP {
-        main()
+        string app_name
     }
+
     DB {
-        add_expense()
-        get_expenses()
-        clear_expenses()
+        string db_type
     }
+
     UTILS {
-        validate_file_type()
-        log_message()
-        format_expense_data()
+        string utility_name
     }
+
     APP ||--o| EXPENSE : manages
     APP ||--o| DB : uses
     APP ||--o| UTILS : uses
+
 ```
 ### Sequence Diagram
 ```mermaid
@@ -122,7 +123,7 @@ sequenceDiagram
 ```
 ### Use Case Diagram
 ```mermaid
-usecaseDiagram
+usecase
     actor User
     User --> (Add Purchase)
     User --> (Edit Expense)
