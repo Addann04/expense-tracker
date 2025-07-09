@@ -123,12 +123,12 @@ sequenceDiagram
 ```
 ### Use Case Diagram
 ```mermaid
-usecase
-    actor User
-    User --> (Add Purchase)
-    User --> (Edit Expense)
-    User --> (View Expenses)
-    User --> (Analyze Spending)
+graph TD
+    User([User]) --> AddPurchase((Add Purchase))
+    User --> EditExpense((Edit Expense))
+    User --> ViewExpenses((View Expenses))
+    User --> AnalyzeSpending((Analyze Spending))
+
 ```
 ### Collaborative Diagram
 ```mermaid
